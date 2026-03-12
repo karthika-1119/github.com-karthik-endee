@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
+genai.configure(api_key="AIzaSyBOR5HtbOlS-GupZqYpLqEVMNPMU5l_kTg")
 
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -47,3 +47,4 @@ if query:
     response = model.generate_content(prompt)
 
     st.write(response.text)
+
