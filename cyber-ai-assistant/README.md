@@ -2,6 +2,8 @@
 
 ## Overview
 
+![Web Interface](Web_interface.png)
+
 The **AI Cybersecurity Knowledge Assistant** is an intelligent application designed to help users quickly understand cybersecurity concepts through **semantic search and vector embeddings**.
 
 Instead of relying on simple keyword matching, the system uses **vector similarity search** to understand the meaning of a user's question and retrieve the most relevant cybersecurity knowledge.
@@ -46,6 +48,8 @@ Phishing is a social engineering attack where attackers trick users into reveali
 ```
 
 The system retrieves the **most semantically similar cybersecurity concept**, even if the exact keywords are different.
+
+![Web Results](web_.interface.png)
 
 ---
 
@@ -179,4 +183,5 @@ LinkedIn:
 ## Project Purpose
 
 This project was developed to demonstrate **semantic search and vector retrieval systems** in the context of cybersecurity knowledge discovery.
+
 
