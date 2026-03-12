@@ -1,8 +1,8 @@
 # AI Cybersecurity Knowledge Assistant (Semantic Search with Vector Embeddings)
 
-## Overview
-
 ![Web Interface](Web_interface.png)
+
+## Overview
 
 The **AI Cybersecurity Knowledge Assistant** is an intelligent application designed to help users quickly understand cybersecurity concepts through **semantic search and vector embeddings**.
 
@@ -56,20 +56,6 @@ The system retrieves the **most semantically similar cybersecurity concept**, ev
 ## System Architecture
 
 ![Architecture Diagram](architecture.png)
-
-```
-User Question
-      ↓
-Sentence Transformer
-      ↓
-Vector Embedding
-      ↓
-Vector Similarity Search
-      ↓
-Retrieve Relevant Cybersecurity Knowledge
-      ↓
-Display Result in Web Interface
-```
 
 This architecture demonstrates a **semantic retrieval pipeline**, commonly used in modern AI systems.
 
@@ -183,6 +169,7 @@ LinkedIn:
 ## Project Purpose
 
 This project was developed to demonstrate **semantic search and vector retrieval systems** in the context of cybersecurity knowledge discovery.
+
 
 
 
