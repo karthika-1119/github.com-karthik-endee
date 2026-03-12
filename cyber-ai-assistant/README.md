@@ -1,4 +1,4 @@
-# 🔐 AI Cybersecurity Knowledge Assistant (Semantic Search with Vector Embeddings)
+# AI Cybersecurity Knowledge Assistant (Semantic Search with Vector Embeddings)
 
 ## Overview
 
@@ -179,3 +179,4 @@ LinkedIn:
 ## Project Purpose
 
 This project was developed to demonstrate **semantic search and vector retrieval systems** in the context of cybersecurity knowledge discovery.
+
