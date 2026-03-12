@@ -49,7 +49,7 @@ Phishing is a social engineering attack where attackers trick users into reveali
 
 The system retrieves the **most semantically similar cybersecurity concept**, even if the exact keywords are different.
 
-![Web Results](web_.interface.png)
+![Web Results](Web_results.png)
 
 ---
 
@@ -183,5 +183,6 @@ LinkedIn:
 ## Project Purpose
 
 This project was developed to demonstrate **semantic search and vector retrieval systems** in the context of cybersecurity knowledge discovery.
+
 
 
