@@ -1,81 +1,101 @@
-# AI Cybersecurity Knowledge Assistant
+# 🔐 AI Cybersecurity Knowledge Assistant (Semantic Search with Vector Embeddings)
 
-## Project Overview
-The AI Cybersecurity Knowledge Assistant is an AI-powered application that helps users understand cybersecurity concepts by retrieving relevant knowledge using semantic vector search.
+## Overview
 
-This project demonstrates how vector embeddings and semantic similarity search can be used to build an intelligent knowledge retrieval system.
+The **AI Cybersecurity Knowledge Assistant** is an intelligent application designed to help users quickly understand cybersecurity concepts through **semantic search and vector embeddings**.
 
-Users can ask cybersecurity-related questions, and the system retrieves the most relevant information from a cybersecurity knowledge base.
+Instead of relying on simple keyword matching, the system uses **vector similarity search** to understand the meaning of a user's question and retrieve the most relevant cybersecurity knowledge.
 
-This project was developed as part of the Endee AI/ML project evaluation.
+This project demonstrates a **Retrieval-Augmented Knowledge System** where cybersecurity information is retrieved from a vectorized knowledge base and presented to the user through an interactive interface.
+
+---
+
+## Problem Statement
+
+Cybersecurity information is vast and complex. Many users struggle to quickly find clear explanations of security threats such as phishing, malware, ransomware, and insider threats.
+
+Traditional keyword-based search systems often fail to retrieve the most relevant information when the query wording differs from the stored data.
+
+This project solves the problem by implementing **semantic search**, allowing the system to understand user intent and retrieve the most relevant cybersecurity concepts.
 
 ---
 
 ## Key Features
 
-- Semantic search for cybersecurity concepts
-- Vector embedding based retrieval
-- Retrieval-Augmented knowledge system
-- Interactive web interface using Streamlit
-- Lightweight and fully local AI pipeline
+* Semantic search using vector embeddings
+* Retrieval-based cybersecurity knowledge assistant
+* Real-time question answering interface
+* Vector similarity ranking for relevant information
+* Lightweight AI pipeline running locally
+* Interactive web interface built with Streamlit
+
+---
+
+## Example Interaction
+
+User Question:
+
+```
+How do hackers steal passwords through fake emails?
+```
+
+System Retrieval:
+
+```
+Phishing is a social engineering attack where attackers trick users into revealing sensitive information such as passwords or credit card details.
+```
+
+The system retrieves the **most semantically similar cybersecurity concept**, even if the exact keywords are different.
 
 ---
 
 ## System Architecture
 
+![Architecture Diagram](architecture.png)
 
-User Query
-↓
-Sentence Transformer Embedding
-↓
+```
+User Question
+      ↓
+Sentence Transformer
+      ↓
+Vector Embedding
+      ↓
 Vector Similarity Search
-↓
-Retrieve Top Cybersecurity Knowledge
-↓
-Display Answer in UI
+      ↓
+Retrieve Relevant Cybersecurity Knowledge
+      ↓
+Display Result in Web Interface
+```
 
+This architecture demonstrates a **semantic retrieval pipeline**, commonly used in modern AI systems.
 
 ---
 
-## Tech Stack
+## Technology Stack
 
-- Python
-- Streamlit
-- Sentence Transformers
-- NumPy
-- Vector Similarity Search
+| Component            | Technology            |
+| -------------------- | --------------------- |
+| Programming Language | Python                |
+| Web Interface        | Streamlit             |
+| Embedding Model      | Sentence Transformers |
+| Vector Search        | NumPy Similarity      |
+| Knowledge Base       | Cybersecurity Dataset |
 
 ---
 
 ## How the System Works
 
-1. The user enters a cybersecurity question.
-2. The query is converted into a vector embedding using the Sentence Transformer model.
-3. The system compares the query vector with stored cybersecurity knowledge vectors.
-4. The most relevant knowledge entries are retrieved based on similarity.
-5. The retrieved knowledge is displayed to the user through a web interface.
-
----
-
-## Use Case Demonstration
-
-Example query:
-
-
-What is phishing?
-
-
-Example result:
-
-
-Phishing is a social engineering attack where attackers trick users into revealing sensitive information such as passwords or financial data.
-
+1. The user submits a cybersecurity question.
+2. The question is converted into a vector embedding using a Sentence Transformer model.
+3. The embedding is compared with stored knowledge vectors.
+4. The system retrieves the most relevant cybersecurity concepts based on similarity scores.
+5. The retrieved knowledge is displayed through the user interface.
 
 ---
 
 ## Project Structure
 
-
+```
 cyber-ai-assistant
 │
 ├── app.py
@@ -84,61 +104,78 @@ cyber-ai-assistant
 ├── vectors.json
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
 ## Setup Instructions
 
-### 1 Clone the repository
+### Clone the Repository
 
+```
+git clone https://github.com/your-username/your-repo-name.git
+```
 
-git clone https://github.com/yourusername/your-repo-name.git
+### Navigate to Project Folder
 
-
-### 2 Navigate to project folder
-
-
+```
 cd cyber-ai-assistant
+```
 
+### Install Dependencies
 
-### 3 Install dependencies
-
-
+```
 pip install -r requirements.txt
+```
 
+### Generate Vector Embeddings
 
-### 4 Generate vector embeddings
-
-
+```
 python ingest.py
+```
 
+### Run the Application
 
-### 5 Run the application
-
-
+```
 python -m streamlit run app.py
-
+```
 
 ---
 
-## Future Improvements
+## Example Use Cases
 
-- Integrate a vector database such as Endee
-- Add large-scale cybersecurity datasets
-- Implement LLM-based answer generation
-- Build a conversational chat interface
+The system can answer questions related to:
+
+* Phishing attacks
+* Malware and ransomware
+* Insider threats
+* Social engineering
+* Ethical hacking
+* Cybersecurity awareness
+
+---
+
+## Future Enhancements
+
+Potential improvements include:
+
+* Integration with large vector databases such as Endee
+* Adding large-scale cybersecurity datasets
+* Incorporating large language models for dynamic response generation
+* Implementing conversational chat interfaces
+* Supporting real-time threat intelligence data
 
 ---
 
 ## Author
 
-Boya Karthik
+**Boya Karthik**
 
-LinkedIn: www.linkedin.com/in/boyakarthik
+LinkedIn:
+[www.linkedin.com/in/boyakarthik](http://www.linkedin.com/in/boyakarthik)
 
 ---
 
-## License
+## Project Purpose
 
-This project is created for educational and research purposes.
+This project was developed to demonstrate **semantic search and vector retrieval systems** in the context of cybersecurity knowledge discovery.
