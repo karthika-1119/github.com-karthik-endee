@@ -1,0 +1,136 @@
+SQL Injection is a web security vulnerability that allows attackers to interfere with queries that an application makes to its database.
+
+Cross Site Scripting (XSS) allows attackers to inject malicious scripts into webpages viewed by other users.
+
+Phishing is a social engineering attack where attackers trick users into revealing sensitive information.
+
+Malware is malicious software designed to damage or disrupt systems.
+
+A firewall monitors and controls incoming and outgoing network traffic.
+
+Ransomware is malware that encrypts files and demands payment to restore access.
+
+Man in the Middle attack occurs when attackers secretly intercept communication between two parties.
+
+Brute force attack is a method where attackers try many passwords until the correct one is found.
+
+Zero Trust Security is a model where no user or device is trusted automatically.
+
+DDoS attack floods a system with traffic to make it unavailable.
+
+SQL Injection is a web security vulnerability where attackers manipulate database queries by inserting malicious SQL code into input fields.
+
+Cross Site Scripting (XSS) allows attackers to inject malicious scripts into webpages that are executed in other users' browsers.
+
+Phishing is a social engineering attack where attackers trick users into revealing sensitive information like passwords or credit card details.
+
+Malware is malicious software designed to damage, disrupt, or gain unauthorized access to computer systems.
+
+Ransomware is a type of malware that encrypts a victim's files and demands payment to restore access.
+
+A firewall is a network security system that monitors and controls incoming and outgoing traffic based on security rules.
+
+A Denial of Service (DoS) attack floods a system with excessive requests, causing it to become unavailable to legitimate users.
+
+A Distributed Denial of Service (DDoS) attack uses multiple systems to overwhelm a target server with traffic.
+
+Brute force attacks attempt to guess passwords by trying many combinations until the correct one is found.
+
+A Man-in-the-Middle (MITM) attack occurs when an attacker secretly intercepts communication between two parties.
+
+Zero Trust Security is a security model that requires verification for every user and device accessing a system.
+
+Privilege escalation occurs when an attacker gains higher-level permissions than originally allowed.
+
+Trojan malware disguises itself as legitimate software to trick users into installing it.
+
+Spyware secretly collects information from a computer system without the user's knowledge.
+
+Adware displays unwanted advertisements and may track user behavior.
+
+Botnets are networks of infected computers controlled by attackers to perform large-scale attacks.
+
+Social engineering attacks manipulate people into revealing confidential information.
+
+Password cracking involves recovering passwords using various techniques such as dictionary attacks or brute force.
+
+Encryption converts data into a coded format to protect it from unauthorized access.
+
+Multi-factor authentication (MFA) requires multiple verification methods to access a system.
+
+Network intrusion detection systems monitor network traffic for suspicious activity.
+
+Endpoint security protects individual devices such as computers and smartphones from cyber threats.
+
+Data breaches occur when sensitive data is accessed or exposed without authorization.
+
+Security patches are updates that fix vulnerabilities in software systems.
+
+Penetration testing involves simulating cyberattacks to identify security weaknesses.
+
+Hackers are individuals who use technical skills to find and exploit vulnerabilities in computer systems, networks, or applications.
+
+Not all hackers are malicious. Some hackers work to identify weaknesses in systems so they can be fixed before criminals exploit them.
+
+Understanding different types of hackers helps organizations better defend their systems and train employees to recognize cyber threats.
+
+White hat hackers are ethical hackers who work to improve cybersecurity by identifying vulnerabilities in systems.
+
+White hat hackers often work as penetration testers, security consultants, or internal security teams.
+
+The goal of white hat hackers is to strengthen security by discovering weaknesses before malicious attackers can exploit them.
+
+Black hat hackers are malicious actors who exploit vulnerabilities for financial gain, disruption, or sabotage.
+
+Black hat hackers use techniques such as malware distribution, ransomware attacks, credential theft, and data breaches.
+
+Black hat hackers are responsible for many cybercrimes including identity theft, financial fraud, and corporate espionage.
+
+Grey hat hackers operate between ethical and malicious hacking.
+
+Grey hat hackers may test systems without permission but usually do not intend to cause damage.
+
+Sometimes grey hat hackers disclose discovered vulnerabilities publicly in order to force organizations to fix security flaws.
+
+Hacktivists are hackers who use cyberattacks to promote political or social causes.
+
+Hacktivists often conduct activities such as website defacement, data leaks, and service disruptions.
+
+Hacktivist groups attempt to draw public attention to political or ideological issues through cyber activities.
+
+State-sponsored hackers are government-backed cyber operators who conduct cyber espionage or cyber warfare.
+
+Nation-state hackers often target critical infrastructure, government systems, and competing nations.
+
+State-sponsored hackers are usually highly skilled, well funded, and capable of conducting long-term stealth operations.
+
+Cyberterrorists use cyber attacks to create fear, chaos, or disruption in critical infrastructure.
+
+Cyberterrorism may target power grids, financial systems, transportation networks, or government systems.
+
+The goal of cyberterrorists is often to destabilize societies or promote ideological agendas.
+
+Insider threats occur when trusted individuals within an organization misuse their access to harm systems or steal data.
+
+Insider threats can come from employees, contractors, or partners who already have authorized system access.
+
+Motivations for insider threats may include revenge, financial gain, coercion, or whistleblowing.
+
+Social engineering attacks manipulate human psychology to trick individuals into revealing sensitive information.
+
+Phishing attacks are a common form of social engineering where attackers impersonate trusted entities through emails or messages.
+
+Security awareness training helps employees recognize cyber threats such as phishing, impersonation, and malicious links.
+
+Employees are often the first line of defense against cyber attacks because many attacks target human behavior rather than technical systems.
+
+Cybersecurity awareness programs train employees to identify suspicious emails, unusual requests, and potential security threats.
+
+Combining security awareness training with penetration testing helps organizations identify both technical and human vulnerabilities.
+
+Well-trained employees can significantly reduce the risk of successful cyber attacks by recognizing suspicious activities early.
+
+Organizations that invest in cybersecurity education improve their overall security posture and resilience against cyber threats.
+
+
+
