@@ -3,31 +3,89 @@ import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-# Load embedding model
-embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+# -------------------------------
+# Page Configuration
+# -------------------------------
+st.set_page_config(
+    page_title="AI Cybersecurity Knowledge Assistant",
+    page_icon="🔐",
+    layout="centered"
+)
 
-# Load stored vectors
-with open("vectors.json") as f:
-    data = json.load(f)
+# -------------------------------
+# Load Embedding Model
+# -------------------------------
+@st.cache_resource
+def load_model():
+    return SentenceTransformer('all-MiniLM-L6-v2')
 
+embed_model = load_model()
+
+# -------------------------------
+# Load Vector Knowledge Base
+# -------------------------------
+@st.cache_data
+def load_vectors():
+    with open("vectors.json") as f:
+        return json.load(f)
+
+data = load_vectors()
 vectors = np.array([x["vector"] for x in data])
 
-st.title("AI Cybersecurity Knowledge Assistant")
+# -------------------------------
+# Title
+# -------------------------------
+st.title("🔐 AI Cybersecurity Knowledge Assistant")
+st.write(
+    "Ask cybersecurity questions and retrieve relevant knowledge using **semantic vector search**."
+)
 
-query = st.text_input("Ask a cybersecurity question")
+# -------------------------------
+# Chat History
+# -------------------------------
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display previous messages
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+# -------------------------------
+# User Input
+# -------------------------------
+query = st.chat_input("Ask a cybersecurity question...")
 
 if query:
 
-    # Convert query to embedding
+    # Save and display user message
+    st.session_state.messages.append({"role": "user", "content": query})
+
+    with st.chat_message("user"):
+        st.markdown(query)
+
+    # -------------------------------
+    # Semantic Search
+    # -------------------------------
     query_vec = embed_model.encode([query])
 
-    # Compute similarity
     similarity = np.dot(vectors, query_vec.T).flatten()
 
-    # Retrieve top 3 documents
     top_indices = similarity.argsort()[-3:][::-1]
 
-    st.subheader("Relevant Cybersecurity Knowledge")
+    # Build response
+    response_text = "### Relevant Cybersecurity Knowledge\n\n"
 
     for i in top_indices:
-        st.write(data[i]["text"])
+        response_text += f"- {data[i]['text']}\n"
+
+    response_text += "\n*Retrieved using semantic vector similarity search.*"
+
+    # Display assistant response
+    with st.chat_message("assistant"):
+        st.markdown(response_text)
+
+    # Save assistant message
+    st.session_state.messages.append(
+        {"role": "assistant", "content": response_text}
+    )
