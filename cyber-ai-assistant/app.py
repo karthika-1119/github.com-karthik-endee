@@ -37,7 +37,7 @@ vectors = np.array([x["vector"] for x in data])
 # -------------------------------
 st.title("🔐 AI Cybersecurity Knowledge Assistant")
 st.write(
-    "Ask cybersecurity questions and retrieve relevant knowledge using **semantic vector search**."
+    "Ask **cybersecurity-related questions** and retrieve relevant knowledge using semantic vector search."
 )
 
 # -------------------------------
@@ -54,11 +54,11 @@ for message in st.session_state.messages:
 # -------------------------------
 # User Input
 # -------------------------------
-query = st.chat_input("Ask a cybersecurity question...")
+query = st.chat_input("Ask a cybersecurity question (e.g., phishing, malware)...")
 
 if query:
 
-    # Save and display user message
+    # Save user message
     st.session_state.messages.append({"role": "user", "content": query})
 
     with st.chat_message("user"):
@@ -73,15 +73,36 @@ if query:
 
     top_indices = similarity.argsort()[-3:][::-1]
 
-    # Build response
-    response_text = "### Relevant Cybersecurity Knowledge\n\n"
+    # -------------------------------
+    # Cybersecurity Domain Filter
+    # -------------------------------
+    if similarity[top_indices[0]] < 0.35:
 
-    for i in top_indices:
-        response_text += f"- {data[i]['text']}\n"
+        response_text = """
+⚠️ **This assistant only answers cybersecurity-related questions.**
 
-    response_text += "\n*Retrieved using semantic vector similarity search.*"
+Please ask questions about topics such as:
 
-    # Display assistant response
+- Phishing attacks  
+- Malware  
+- Ransomware  
+- Ethical hacking  
+- Social engineering  
+- Cybersecurity awareness
+"""
+
+    else:
+
+        response_text = "### Relevant Cybersecurity Knowledge\n\n"
+
+        for i in top_indices:
+            response_text += f"- {data[i]['text']}\n"
+
+        response_text += "\n*Retrieved using semantic vector similarity search.*"
+
+    # -------------------------------
+    # Display Assistant Response
+    # -------------------------------
     with st.chat_message("assistant"):
         st.markdown(response_text)
 
