@@ -103,7 +103,7 @@ cyber-ai-assistant
 ### Clone the Repository
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/karthika-1119/github.com-karthik-endee.git
 ```
 
 ### Navigate to Project Folder
